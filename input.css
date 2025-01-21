@@ -45,13 +45,12 @@ h3{
 .btn:hover{
     @apply opacity-90;
 }
-
 .btn_outline{
     @apply bg-transparent;
 }
 .btn_outline:hover{
-    @apply bg-yellow-500
+    @apply bg-yellow-500;
 }
 .popular__card:hover img{
-@apply -top-8;
+    @apply -top-8;
 }

@@ -1321,3 +1321,14 @@ h3{
     line-height: 1;
   }
 }
+.popular__card:hover img {
+  top: -2rem; 
+  position: relative;
+}
+
+.swiper-pagination-bullet-active{
+  --tw-bg-opacity: 1;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #22c55e; 
+}
