@@ -51,6 +51,6 @@ h3{
 .btn_outline:hover{
     @apply bg-yellow-500;
 }
-.popular__card:hover img{
-    @apply -top-8;
-}
+/* .popular__card:hover img{
+    @apply transform scale-105;
+} */
