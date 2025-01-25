@@ -164,8 +164,15 @@ main {
 
   loginForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
+    const passwordInput = document.querySelector('input[type="password"]');
+    const password = passwordInput.value;
+
+    if (password !== '223058' && password !== '223055') {
+      alert('Incorrect password');
+      return;
+    }
     const email = emailInput.value; // Get email input
-    const emailName = email.split('@')[0]; // Extract username from email
+    const emailName = email; // Extract username from email
     localStorage.setItem('username', emailName); // Store username in localStorage
     window.location.href = 'index.html'; // Redirect to website.html
   });

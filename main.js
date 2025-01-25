@@ -114,4 +114,10 @@ window.addEventListener('scroll', activeLink)
     // ==========loginPage=============
    
     
-    
+    const username = localStorage.getItem('username');
+    if (username) {
+      const emailInput = document.querySelector('input[type="email"]');
+      if (emailInput) {
+        emailInput.placeholder = username;
+      }
+    }
